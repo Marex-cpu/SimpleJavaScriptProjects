@@ -88,7 +88,6 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
-  /* border: 1px solid red; */
 }
 
 .line {
@@ -99,7 +98,8 @@ main {
   height: 3rem;
   padding: 0 2rem;
   background: #f0db4f;
-  border-radius: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .line > .number {
   font-family: Arial, Helvetica, sans-serif;
@@ -123,4 +123,49 @@ main {
   height: 50rem;
   background: #fff;
   padding-top: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.document .img {
+  width: 60rem;
+  height: 30rem;
+  border: #f0db4f solid 5px;
+  background-image: url("/images/colorflipper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.document .img:hover {
+  transform: scale(1.2);
+  border: #000 solid 5px;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .document .img {
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .document .img {
+    width: 40rem;
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .document .img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .document .img {
+    width: 20rem;
+    height: 10rem;
+  }
 }

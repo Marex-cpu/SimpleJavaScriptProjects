@@ -1,0 +1,115 @@
+/* setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 8rem auto;
+}
+
+.title {
+  padding-bottom: 0.5rem;
+  border-bottom: orange 3px solid;
+  margin-bottom: 3rem;
+}
+.title > h2 {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+/* filter buttons */
+.filter-btn {
+  margin-right: 15px;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  background-color: transparent;
+  color: orange;
+  border: 2px solid orange;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.filter-btn:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+/* menu items */
+.section-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.menu-item {
+  margin-bottom: 2rem;
+  width: 40%;
+}
+
+.menu-item .photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid orange;
+  border-radius: 10px;
+}
+
+.item-info {
+  margin-top: 8px;
+}
+
+.item-info header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  border-bottom: 1px solid orange;
+}
+.item-info header .name {
+  font-family: "Grape Nuts", cursive;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.item-info header .price {
+  font-family: "Grape Nuts", cursive;
+  font-size: 24px;
+  color: orange;
+  letter-spacing: 1px;
+}
+
+.item-info .item-text {
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .menu-item {
+    /* border: solid 1px blue; */
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .menu-item .photo {
+    height: 300px;
+    border-radius: 16px;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-btn {
+    margin: 0 0 10px 0;
+  }
+}

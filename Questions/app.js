@@ -2,8 +2,11 @@ const questions = document.querySelectorAll(".item");
 
 questions.forEach(function (question) {
   const btn = question.querySelector(".btn");
+  console.log(btn);
   btn.addEventListener("click", function () {
+    btn.classList.toggle("btn-minus");
     questions.forEach(function (item) {
+      console.log(questions);
       if (item !== question) {
         item.classList.remove("show-text");
       }

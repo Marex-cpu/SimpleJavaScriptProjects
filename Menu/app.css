@@ -42,6 +42,10 @@
   background-color: orange;
   color: #fff;
 }
+.filter-btn.active {
+  background-color: orange;
+  color: #fff;
+}
 
 /* menu items */
 .section-center {

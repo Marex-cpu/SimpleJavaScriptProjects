@@ -57,6 +57,9 @@ body {
 .question .btn:hover {
   transform: rotate(90deg);
 }
+.question .btn.btn-minus:hover {
+  transform: rotate(0deg);
+}
 
 .answer {
   display: none;

@@ -36,11 +36,17 @@ const section = [
     link: "/Menu/app.html",
     img: "/images/menu.png",
   },
+  {
+    number: 7,
+    nameProject: "Nav",
+    link: "/Nav/app.html",
+    img: "/images/nav.png",
+  },
 ];
 
 const wrapper = document.querySelector(".wrapper");
 
-//load items
+// load items
 window.addEventListener("DOMContentLoaded", function () {
   displayAllSections(section);
 });

@@ -1,3 +1,11 @@
+//preloader
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", function () {
+  this.setTimeout(() => {
+    preloader.classList.add("hide-preloader");
+  }, 1000);
+});
+
 //sections
 const section = [
   {
@@ -43,7 +51,6 @@ const section = [
     img: "/images/nav.png",
   },
 ];
-
 const wrapper = document.querySelector(".wrapper");
 
 // load items

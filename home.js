@@ -68,3 +68,7 @@ function displayAllSections(sectionItems) {
   displaySection = displaySection.join("");
   wrapper.innerHTML = displaySection;
 }
+
+//footer date
+const date = document.querySelector(".date");
+date.innerHTML = new Date().getFullYear();

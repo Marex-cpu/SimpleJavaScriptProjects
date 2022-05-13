@@ -6,6 +6,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -144,6 +145,57 @@ main {
 }
 
 /* footer style */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background-color: #000;
+  width: 100%;
+  height: auto;
+}
+footer .footer-text {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Padauk", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.footer-text.link {
+  color: #f0db4f;
+  text-decoration: underline #f0db4f;
+}
+
+.scroll-to-top {
+  background: #f0db4f;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  border-radius: 5px;
+  animation: bounce 2s ease-in-out infinite;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-to-top:hover {
+  background: #000;
+  color: #f0db4f;
+  border: 3px solid #f0db4f;
+}
+
+/* animation */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 /* responsive */
 @media screen and (max-width: 1024px) {
@@ -156,6 +208,14 @@ main {
     width: 40rem;
     height: 25rem;
   }
+  footer .footer-text {
+    font-size: 16px;
+  }
+  .scroll-to-top {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
 }
 @media screen and (max-width: 580px) {
   .document .img {
@@ -164,6 +224,14 @@ main {
   }
   .title {
     font-size: 3rem;
+  }
+  footer .footer-text {
+    font-size: 12px;
+  }
+  .scroll-to-top {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
   }
 }
 @media screen and (max-width: 450px) {

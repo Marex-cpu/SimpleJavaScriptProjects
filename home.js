@@ -50,6 +50,12 @@ const section = [
     link: "/Nav/app.html",
     img: "/images/nav.png",
   },
+  {
+    number: 8,
+    nameProject: "Tabs",
+    link: "/Tabs/app.html",
+    img: "/images/tabs.png",
+  },
 ];
 const wrapper = document.querySelector(".wrapper");
 

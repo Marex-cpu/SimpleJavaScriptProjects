@@ -56,6 +56,12 @@ const section = [
     link: "/Tabs/app.html",
     img: "/images/tabs.png",
   },
+  {
+    number: 9,
+    nameProject: "Countdown",
+    link: "/Countdown/app.html",
+    img: "/images/countdown.png",
+  },
 ];
 const wrapper = document.querySelector(".wrapper");
 

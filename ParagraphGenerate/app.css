@@ -1,0 +1,121 @@
+/* setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  /* margin: 0; */
+}
+/* style */
+
+body {
+  background-color: #dae8fe;
+}
+
+.section-center {
+  display: grid;
+  place-items: center;
+  margin: 100px auto;
+  width: 80%;
+}
+
+.section-center > h3 {
+  font-size: 26px;
+  letter-spacing: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #2974f7;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.lorem-form {
+  display: flex;
+  align-items: center;
+}
+
+.lorem-form label {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #2974f7;
+}
+
+.lorem-form input {
+  width: 45px;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  /* padding-left: 6px; */
+  color: #2974f7;
+  text-align: center;
+}
+.lorem-form input::placeholder {
+  opacity: 0.5;
+}
+
+.lorem-form .btn {
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  padding: 5px;
+  border: #2974f7 solid 2px;
+  background: transparent;
+  text-transform: uppercase;
+  margin-left: 5px;
+  color: #2974f7;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.lorem-form .btn:hover {
+  background-color: #2974f7;
+  color: #dae8fe;
+}
+
+.lorem-text {
+  margin-top: 20px;
+  padding: 0 20%;
+}
+.lorem-text .result {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .section-center {
+    margin: 90px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-center {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .section-center h3 {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .lorem-text {
+    padding: 0;
+  }
+  .lorem-text .result {
+    padding: 0 15px;
+  }
+}

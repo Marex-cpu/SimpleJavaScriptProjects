@@ -104,6 +104,13 @@ const section = [
     img: "/images/countdown.png",
     id: "countdown",
   },
+  {
+    number: 10,
+    nameProject: "Paragraph Generate",
+    link: "/ParagraphGenerate/app.html",
+    img: "/images/paragraphgenerate.png",
+    id: "paragraph",
+  },
 ];
 const wrapper = document.querySelector(".wrapper");
 

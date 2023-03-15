@@ -29,7 +29,7 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format p");
 
-let futureDate = new Date(2022, 11, 25, 11, 30, 0);
+let futureDate = new Date(2024, 11, 25, 11, 30, 0);
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
